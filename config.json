@@ -1,0 +1,29 @@
+{
+  "seed": 42,
+  "workbench_repo": "./WorkBench",
+  "workbench_commit": "49c7dfd",
+  "encoder": {
+    "type": "sentence-transformers",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "PIN_THIS_HASH_BEFORE_VALIDATION"
+  },
+  "tool_text": {"split_name": true},
+  "split": {"n_validation_templates": 14},
+  "grid": {
+    "epsilon_quantiles": [0.0, 0.1, 0.25, 0.4, 0.5, 0.6, 0.75, 0.9],
+    "tau_quantiles": [0.5, 0.6, 0.7, 0.8, 0.85, 0.9, 0.95],
+    "min_k": [2, 4, 6],
+    "max_k": [8, 12, 16, 27]
+  },
+  "shortlist_size": 5,
+  "agent": {
+    "base_url": null,
+    "api_key_env": "OPENAI_API_KEY",
+    "model": "gpt-4o-2024-08-06",
+    "temperature": 0.0,
+    "max_steps": 10,
+    "timeout_s": 120,
+    "system_prompt": "You are a helpful assistant for workplace tasks. Today's date is Thursday, 2023-11-30 and the current time is 00:00. Remember the current date when answering queries. Use the available tools to complete the request."
+  },
+  "bootstrap": {"B": 2000}
+}

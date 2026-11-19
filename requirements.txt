@@ -1,0 +1,8 @@
+numpy
+pandas
+scipy
+sentence-transformers   # all-MiniLM-L6-v2 (pin revision in config.json)
+tiktoken                # cl100k_base token counting
+openai                  # OpenAI-compatible agent client
+langchain
+langchain-core
